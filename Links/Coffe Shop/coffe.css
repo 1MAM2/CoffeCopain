@@ -1,0 +1,225 @@
+@import url("../../style.css");
+html
+{
+    padding-bottom: 100px;
+}
+body
+{
+   margin: 0;
+   background-color: #F7FFE5 !important;
+   font-family: 'Protest Revolution', sans-serif !important;
+}
+.container
+{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5;
+    background-color: #F7FFE5;
+    
+}
+i
+{
+    width: 30px;
+}
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 0;
+    font-size: 3rem;
+}
+header .icon-cart
+{
+    position: relative;
+    cursor: pointer;
+}
+header .icon-cart span
+{
+    position: absolute;
+    display: flex;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    top: 50%;
+    right: -20px;
+    
+}
+.listCoffe .item img
+{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+    border-radius: 20px;
+}
+.listCoffe
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listCoffe .item
+{
+    background-color: #E1ECC8;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listCoffe .item h2
+{
+    font-weight: 600 ;
+    font-size: 2rem;
+
+}
+.listCoffe .item .price
+{
+    letter-spacing: 3px;
+}
+.listCoffe .item button
+{
+    background-color: #A0C49D;
+    color: rgb(42, 2, 2);
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+}
+.title
+{
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: #A0C49D;
+}
+
+.cartTab
+{
+    width: 400px;
+    background-color: #0D9276;
+    color: #eee;
+    position: fixed;
+    inset: 0 -400px 0 auto ;  /*inset top right bottom left şeklinde position değeri atayabiliriz*/
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    font-size: 1.6rem;
+    transition: all .5s;
+
+}
+body.showCart .cartTab
+{
+    inset: 0 0 0 auto;
+}
+.cartTab h2
+{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .button
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 0 1rem;
+   
+
+}
+.cartTab .button button
+{
+    background-color: #e8bc0e;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.cartTab .button .close
+{
+    background-color: #eee ;
+}
+
+.cartTab .listCart .item img
+{
+    width: 100%;
+}
+.cartTab .listCart .item
+{
+    display: grid;
+    grid-template-columns: 70px 150px 50px  1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span
+{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;  
+  color: #555;
+  border-radius: 50%;
+  cursor: pointer;  
+}
+.listCart .quantity span:nth-child(2)
+{
+    background-color: transparent;
+    color: #eee;
+}
+.listCart .item:nth-child(even)
+{
+    background-color: #eee1;
+}
+.listCart
+{
+    overflow: auto;
+    margin-top: 1rem;
+}
+.listCart::-webkit-scrollbar
+{
+    width: 0;
+}
+footer
+{
+    bottom: -300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .coffe_shop .card
+{
+    width: 30rem !important;
+    height: 35rem !important;
+}
+.coffe_shop .card img
+{
+    height: 18.9rem;
+    margin-top: 1rem;
+}
+.cart
+{
+    border: 1px dashed gray;
+    margin: 0 auto;
+}
+.cart .cart-img
+{
+    width: 10rem;
+    height: 7.878rem;
+    margin: 1rem
+}
+.cart .cart-body
+{
+    padding: 1rem 2rem;
+} */
+

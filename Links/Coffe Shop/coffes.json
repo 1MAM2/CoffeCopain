@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name":"Americano",
+        "imgUrl":"Americano.jpg",
+        "price": 15
+    },
+    {
+        "id": 2,
+        "name":"Cappuccino",
+        "imgUrl":"Cappuccino.jpg",
+        "price": 10
+    },
+    {
+        "id": 3,
+        "name":"Espresso",
+        "imgUrl":"Espresso.jpg",
+        "price": 25
+    },
+    {
+        "id": 4,
+        "name":"Latte",
+        "imgUrl":"Latte.jpeg",
+        "price": 20
+    }
+]
